@@ -1,0 +1,13 @@
+# WWC Day-3 Python Coding challenge
+# Write a function to count the number of vowels in a given string 
+
+def countVowel(str):
+    vowel=["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    count=0
+    for i in range(len(str)):
+        if str[i] in vowel:
+            count+=1
+    return count
+
+str="Apple"
+print("Number of vowels in {} is {} ".format(str, countVowel(str)))
