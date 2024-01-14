@@ -1,0 +1,9 @@
+# WWC Day-2 Python Coding challenge
+# Create a program to calculate the area of a circle given its radius.
+import math
+def areaCircle(radius):
+
+    return (math.pi*radius*radius)
+
+r=5
+print("Area of the circle is: ", areaCircle(r))
