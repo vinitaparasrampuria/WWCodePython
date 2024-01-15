@@ -1,0 +1,16 @@
+# WWC Day-5 Python Coding challenge
+# Write a program to find the maximum and minimum values in a list.
+
+def minMaxList(l):
+
+    minimum=float("inf")
+    maximum=float("-inf")
+    for i in range(len(l)):
+            minimum=min(minimum, l[i])
+            maximum=max(maximum, l[i])
+    return (minimum, maximum)
+
+l=[5,6,8,10,14]
+minimum, maximum=minMaxList(l)
+print("Minimum of {} is: {}".format(l, minimum))
+print("Maximum of {} is: {}".format(l, maximum))
