@@ -1,0 +1,19 @@
+# WWC Day-7 Python Coding challenge
+# Write a program to check if a number is positive, negative, or zero.
+
+def number(n):
+    if n<0:
+        return "Negative"
+    elif n>0:
+        return "Positive"
+    else:
+        return "Zero"
+
+n=10
+print("Number {} is {}".format(n,number(n)))
+n=-10
+print("Number {} is {}".format(n,number(n)))
+n=0
+print("Number {} is {}".format(n,number(n)))
+
+
