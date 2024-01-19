@@ -1,0 +1,12 @@
+# WWC Day-10 Python Coding challenge
+# Write a program to remove duplicates from a list.
+
+def removeDuplicates(list):
+    output=[]
+    for items in list:
+        if items not in output:
+            output.append(items)
+    return output
+
+list=[1,2,4,6,1,5,6]
+print(removeDuplicates(list))
