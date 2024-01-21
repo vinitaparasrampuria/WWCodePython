@@ -1,0 +1,13 @@
+# WWC Day-11 Python Coding challenge
+# Write a program to print the multiplication table of a given number.
+
+def multiplication():
+    output=[]
+    n=int(input("Enter a number:"))
+    end=int(input("Enter the number upto which you want multiplication table:"))
+    print("Multiplication table of {} is:".format(n))
+    
+    for i in range(1,end+1):
+        print("{} * {} = {}".format(n, i, n*i))
+        
+multiplication()
