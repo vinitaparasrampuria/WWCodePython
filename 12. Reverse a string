@@ -1,0 +1,9 @@
+# WWC Day-12 Python Coding challenge
+# Write a program to reverse a given string.
+
+def reverseString():
+    
+    s=input("Enter a string:")
+    print("The reversed string is: ", s[::-1])
+        
+reverseString()
