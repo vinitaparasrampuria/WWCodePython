@@ -1,0 +1,12 @@
+# WWC Day-13 Python Coding challenge
+# Write a program to shuffle the elements of a list randomly.
+
+import random
+def shuffleList(list):
+    print(list)
+    shuffled_list = random.sample(list, len(list))
+    return shuffled_list
+        
+
+list=[1, 2, 4, 7, 3, 8, 9]
+print("The suffled list is :", shuffleList(list))
