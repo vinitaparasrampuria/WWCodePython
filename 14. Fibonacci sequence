@@ -1,0 +1,15 @@
+# WWC Day-14 Python Coding challenge
+# Write a program to print the first n numbers of a Fibonacci sequence
+
+def fibonacci(n):
+    fibo = [0, 1]
+
+    for i in range(2, n):
+        fibo.append(fibo[-1] + fibo[-2])
+
+    return fibo
+
+# Example: Print the first 10 Fibonacci numbers
+n = 10
+result = fibonacci(n)
+print(f"The first {n} Fibonacci numbers are: {result}")
