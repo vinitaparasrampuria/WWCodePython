@@ -1,0 +1,11 @@
+# WWC Day-15 Python Coding challenge
+# Create a program that checks if a year is a leap year.
+
+def leapYear(n):
+    if (n%4==0 and n%100!=0) or (n%400==0):
+        print("{} is a leap year".format(n))
+    else:
+        print("{} is not a leap year".format(n))
+
+yr=int(input("Enter a year:"))
+leapYear(yr)
