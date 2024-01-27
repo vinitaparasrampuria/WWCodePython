@@ -1,0 +1,15 @@
+# WWC Day-17 Python Coding challenge
+# Create a program that capitalizes the first letter of each word in a sentence
+
+def capitalizeWord(sentence):
+    new_sentence=[]
+    split_sent=sentence.split(" ")
+    for s in split_sent:
+        new_sentence.append(s[0].upper()+s[1:])
+    
+    return " ".join(new_sentence)
+        
+
+    return dictionary
+sentence=input("Enter a sentence:")
+print(capitalizeWord(sentence))
