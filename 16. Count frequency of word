@@ -1,0 +1,17 @@
+# WWC Day-16 Python Coding challenge
+# Write a function that counts the frequency of each word in a sentence.
+
+def frequenceWord(sentence):
+    dictionary={}
+    split_sent=sentence.split(" ")
+    for s in split_sent:
+        if s[-1]=="." or s[-1]==",":
+            s=s[:-1]
+        if s in dictionary:
+            dictionary[s]+=1
+        else:
+            dictionary[s]=1
+
+    return dictionary
+sentence=input("Enter a sentence:")
+print(frequenceWord(sentence))
