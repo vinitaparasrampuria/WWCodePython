@@ -1,0 +1,23 @@
+# WWC Day-23 Python Coding challenge
+# Write a program that checks if a key exists in a dictionary.
+
+def checkKey(my_dict,k):
+    for key in my_dict:
+        if key==k:
+            return True
+    
+    return False
+
+
+
+k=input("Enter the key you want to check:")
+
+my_dict={
+"fruits": ["apple", "banana", "mango"],
+"vegetables":["carrot", "potato", "tomato"],
+"animals":["monkey", "lion", "tiger"],
+"birds":["parrot", "sparrow", "pigeon"],
+"reptiles":["snake", "lizards"]
+}
+
+print("The key {} exists in dict {}? {}".format(k, my_dict, checkKey(my_dict, k)))
