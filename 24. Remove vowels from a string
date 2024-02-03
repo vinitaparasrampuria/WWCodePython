@@ -1,0 +1,19 @@
+# WWC Day-24 Python Coding challenge
+# Write a program to remove vowels from a given string.
+
+def removeVowels(my_str):
+    new_str=""
+    for s in my_str:
+        if s=="a" or s=='e' or s=='i' or s=='o' or s=='u' or\
+        s=='A' or s=='E' or s=='I' or s=='O' or s=='U':
+            continue
+        else:
+            new_str+=s
+    
+    return new_str
+
+
+my_str="I love programming"
+
+print("The key original string is", my_str)
+print("The new string is: ", removeVowels(my_str))
