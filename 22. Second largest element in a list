@@ -1,0 +1,22 @@
+# WWC Day-22 Python Coding challenge
+# Create a program to find the second-largest element in a list.
+
+def removeSecond(my_list):
+    if len(my_list)<2:
+        return None
+    
+    first = second=float("-inf")
+
+    for item in my_list:
+        if item>first:
+            second=first
+            first=item
+        elif item >second and item!=first:
+            second=item
+    
+    return second
+
+
+my_list = {1, 2, 3, 4, 5, 8, 10, 22, 16, 19, 30, 36}
+
+print("The second largest element is :", removeSecond(my_list))
