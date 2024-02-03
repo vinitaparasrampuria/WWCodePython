@@ -1,0 +1,22 @@
+# WWC Day-25 Python Coding challenge
+# Create a program to concatenate two lists.
+
+def concatenateLists(list1, list2):
+    #method 1
+    #use + operator to concatenate two lists
+    print("Contatenation using + operator: ")
+    print(list1+list2)
+
+    #method 2
+    #use for loop
+    result=list1
+    for l in list2:
+        result.append(l)
+    print("Concatenation using for loop: ")
+    print(result)
+
+
+list1=[1,2,3, 4, 5]
+list2=[6, 7, 8, 9, 10]
+
+concatenateLists(list1, list2)
