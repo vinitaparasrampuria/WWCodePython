@@ -1,0 +1,10 @@
+# WWC Day-27 Python Coding challenge
+# Create a program that sorts a list of strings alphabetically.
+
+def sortStrings(list1):
+    sorted_list = sorted(list1)
+    print("The sorted list is: ", sorted_list)
+
+list1=["Apple", "apple", "Zebra", "Cat", "Bat", "Tub"]
+print("Original list: ", list1)
+sortStrings(list1)
