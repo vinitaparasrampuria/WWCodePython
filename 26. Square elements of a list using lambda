@@ -1,0 +1,16 @@
+# WWC Day-26 Python Coding challenge
+# Create a program that uses a lambda function to square each element of a list.
+
+def square(list1):
+    #method-1
+    squared_list1 = list(map(lambda x: x**2, list1))
+    print("Square of list using method-1: ", squared_list1)
+
+    #method2
+    squared_list2 = [(lambda x: x**2)(x) for x in list1]
+    print("Square of list using method-2: ", squared_list2)
+
+
+list1=[1,2,3, 4,5]
+print("Original list: ", list1)
+square(list1)
