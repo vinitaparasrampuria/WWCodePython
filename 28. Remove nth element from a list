@@ -1,0 +1,35 @@
+# WWC Day-28 Python Coding challenge
+# Create a program that removes the nth element from a list.
+
+def removeNthElement(my_list, n):
+    #method 1 : Using slicing
+
+    if 0 <= n < len(my_list):
+        # Use list slicing to remove the nth element
+        new_list = my_list[:n] + my_list[n+1:]
+        print("Updated list using slicing: ", new_list)
+    else:
+        print("Invalid index. Please provide a valid index within the range.")
+    
+    #method 2 : Using list comprehension
+        
+    if 0 <= n < len(my_list):
+    # Use list comprehension to create a new list without the nth element
+        new_list2 = [value for i, value in enumerate(my_list) if i != n]
+        print("Updated list using list comprehension: ", new_list2)
+    else:
+        print("Invalid index. Please provide a valid index within the range.")
+
+    
+    #method 3: Using pop
+    if 0 <= n < len(my_list):
+        # Use pop to remove the nth element
+        my_list.pop(n)
+        print("Updated list using pop(): ", my_list)
+    else:
+        print("Invalid index. Please provide a valid index within the range.")
+
+
+list=["Apple", "apple", "Zebra", "Cat", "Bat", "Tub"]
+print("Original list: ", list)
+removeNthElement(list, 4)
