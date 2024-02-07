@@ -1,0 +1,14 @@
+# WWC Day-29 Python Coding challenge
+# Create a function that generates a random number between a given range.
+
+import random
+def generateRandom(start, end):
+
+    if(start>end):
+        raise Exception("Start should be less than end.")
+    number=random.randint(start, end)
+    print("The random number is: ", number)
+
+start=int(input("Enter the start limit of the range: "))
+end=int(input("enter the end limit of the range: "))
+generateRandom(start, end)
