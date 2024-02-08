@@ -1,0 +1,25 @@
+# WWC Day-30 Python Coding challenge
+# Create a function that finds the second smallest element in a list.
+
+
+def secondSmallest(my_list):
+    if len(my_list)<2:
+        print("Second smallest number not possible. Length of list less than two.")
+
+    first= second=float("infinity")
+
+    for l in my_list:
+        if l<first:
+            second=first
+            first=l           
+        elif l!=first and l<second:
+            second=l
+    
+    print("Second smallest number is: ", second)
+
+
+my_list=[5, 10, 4, 7, 12, 3, 8]
+secondSmallest(my_list)
+
+my_list = [4, 7, 1, 9, 3, 5]
+secondSmallest(my_list)
