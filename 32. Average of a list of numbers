@@ -1,0 +1,15 @@
+# WWC Day-32 Python Coding challenge
+# Create a function that calculates the average of a list of numbers
+
+def averageList(my_list):
+    if len(my_list)==0:
+        return 0
+    sum_of_list=0
+    for n in my_list:
+        sum_of_list+=n
+    
+    return sum_of_list/len(my_list)
+
+my_list=[1, 5, 3, 8, 10]
+print("The list is : ", my_list)
+print("Average is: ", averageList(my_list))
