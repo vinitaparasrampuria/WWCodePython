@@ -1,0 +1,16 @@
+# WWC Day-34 Python Coding challenge
+# Write a Python program to merge two dictionaries
+
+def mergeDict(d1, d2):
+    merged_dict = d1.copy()
+    merged_dict.update(d2)
+    return merged_dict
+
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+
+result_dict = mergeDict(dict1, dict2)
+
+print("First dictionary: ", dict1)
+print("Second dictionary: ", dict2)
+print("Merged Dictionary:", result_dict)
