@@ -1,0 +1,35 @@
+# WWC Day-36 Python Coding challenge
+# Write a Python program to check if two strings are anagrams
+
+def checkAnagrams(s1, s2):
+    dict={}
+
+    if len(s1)!=len(s2):
+        return False
+
+    for i in s1:
+        if i not in dict:
+            dict[i]=1
+        else:
+            dict[i]=dict[i]+1
+    
+    for j in s2:
+        if j in dict:
+            dict[j]=dict[j]-1
+        else:
+            return False
+    
+    for k in dict:
+        if dict[k]>0:
+            return False
+    
+    return True
+
+s1="abc"
+s2="cab"
+
+print(f"{s1} and {s2} are anagrams? {checkAnagrams(s1, s2)}")
+
+s3="bat"
+
+print(f"{s1} and {s3} are anagrams? {checkAnagrams(s1, s3)}")
