@@ -1,0 +1,22 @@
+# WWC Day-35 Python Coding challenge
+# Write a simple unit test for a function that adds two numbers
+
+def add_two_numbers(a,b):
+    return (a+b)
+
+
+import unittest
+
+class TestAddTwoNumbersFunction(unittest.TestCase):
+
+    def test_add_two_numbers(self):
+        self.assertEqual(add_two_numbers(3, 4), 7, "Adding 3 and 4 should be equal to 7")
+
+    def test_add_two_negative_numbers(self):
+        self.assertEqual(add_two_numbers(-2, -5), -7, "Adding -2 and -5 should be equal to -7")
+
+    def test_add_positive_and_negative_numbers(self):
+        self.assertEqual(add_two_numbers(10, -3), 7, "Adding 10 and -3 should be equal to 7")
+
+if __name__ == '__main__':
+    unittest.main()
