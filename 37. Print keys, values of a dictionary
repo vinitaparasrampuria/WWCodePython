@@ -1,0 +1,13 @@
+# WWC Day-37 Python Coding challenge
+# Write a program to iterate through a dictionary and print its keys and values
+
+def printDict(dic):
+    for key, value in dic.items():
+        print(f"{key}:{value}")
+    
+
+dic={"a":1,
+    "b":2,
+     "c":3 }
+
+printDict(dic)
